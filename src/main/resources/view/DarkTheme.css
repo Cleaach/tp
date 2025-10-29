@@ -241,15 +241,15 @@
     -fx-border-radius: 999;
 }
 .scroll-bar .thumb {
-    -fx-background-color: #D8A8A8 !important;
+    -fx-background-color: #bd8292 !important;
     -fx-background-insets: 1;
     -fx-background-radius: 999;
     -fx-border-color: transparent;
     -fx-border-radius: 999;
     -fx-opacity: 1;
 }
-.scroll-bar .thumb:hover   { -fx-background-color: #C98C8C !important; }
-.scroll-bar .thumb:pressed { -fx-background-color: derive(#C98C8C, -12%) !important; }
+.scroll-bar .thumb:hover   { -fx-background-color: #bd8292 !important; }
+.scroll-bar .thumb:pressed { -fx-background-color: derive(#bd8292, -12%) !important; }
 .corner, .scroll-pane .corner, .virtual-flow .corner {
     -fx-background-color: white !important;
     -fx-background-insets: 0;
