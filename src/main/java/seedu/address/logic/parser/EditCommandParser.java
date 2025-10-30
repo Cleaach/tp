@@ -65,7 +65,7 @@ public class EditCommandParser implements Parser<EditCommand> {
         }
 
         argMultimap.verifyNoDuplicatePrefixesFor(PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ADDRESS,
-                PREFIX_WEDDING_DATE, PREFIX_PRICE, PREFIX_BUDGET, PREFIX_PARTNER);
+                PREFIX_WEDDING_DATE, PREFIX_PRICE, PREFIX_BUDGET, PREFIX_PARTNER, PREFIX_CATEGORY);
 
         EditPersonDescriptor editPersonDescriptor = new EditPersonDescriptor();
 
