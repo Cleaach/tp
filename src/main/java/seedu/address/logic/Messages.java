@@ -18,7 +18,7 @@ public class Messages {
     public static final String MESSAGE_INVALID_COMMAND_FORMAT = "Invalid command format! \n%1$s";
     public static final String MESSAGE_INVALID_PERSON_DISPLAYED_INDEX = "The person index provided is invalid";
     public static final String MESSAGE_DUPLICATE_FIELDS =
-            "Multiple values were specified for the one or more of the following single-value-only fields: ";
+            "Multiple values were specified for the following single-value-only fields: ";
 
     /**
      * Returns a message indicating the number of persons listed with correct
