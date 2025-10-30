@@ -34,6 +34,7 @@ import static seedu.address.logic.commands.CommandTestUtil.VALID_WEDDING_DATE_BO
 import static seedu.address.logic.commands.CommandTestUtil.WEDDING_DATE_DESC_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.WEDDING_DATE_DESC_BOB;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_CATEGORY;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_PARTNER;
@@ -494,6 +495,7 @@ public class AddCommandParserTest {
         String userInput = NAME_DESC_BOB + PHONE_DESC_BOB + EMAIL_DESC_BOB + ADDRESS_DESC_BOB
                 + TYPE_DESC_VENDOR + TAG_DESC_FRIEND + TAG_DESC_HUSBAND;
 
-        assertParseFailure(parser, userInput, Person.MSG_MAX_ONE_CATEGORY_FOR_VENDOR);
+        // For vendor with multiple categories, expect duplicate prefix error from parser
+        assertParseFailure(parser, userInput, Messages.getErrorMessageForDuplicatePrefixes(PREFIX_CATEGORY));
     }
 }

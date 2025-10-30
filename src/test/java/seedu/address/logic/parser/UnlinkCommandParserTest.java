@@ -58,11 +58,13 @@ public class UnlinkCommandParserTest {
     public void parse_duplicatePrefix_throwsParseException() {
         // Duplicate client prefix
         assertParseFailure(parser, " client/1 client/2 vendor/3",
-                "Multiple values specified for the following single-valued field(s): client/");
+                "Multiple values were specified for the one or more of the following single-value-only fields: "
+                + "client/");
 
         // Duplicate vendor prefix
         assertParseFailure(parser, " client/1 vendor/2 vendor/3",
-                "Multiple values specified for the following single-valued field(s): vendor/");
+                "Multiple values were specified for the one or more of the following single-value-only fields: "
+                + "vendor/");
     }
 
     @Test
